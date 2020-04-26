@@ -1,0 +1,40 @@
+.header {
+	padding-top: $navBarHeight;
+
+	.devenez {
+		font-size: 53px;
+		font-weight: 300;
+		color: $color-orange;
+		line-height: 1.1;
+		text-transform: uppercase;
+		margin-left: 10px;
+	}
+
+	.batisseurs {
+		font-size: 53px;
+		font-weight: 300;
+		color: $white;
+		line-height: 1.1;
+		text-transform: uppercase;
+		margin-left: 10px;
+	}
+
+	.bullet-point-list {
+		margin-bottom: 0;
+
+		.bullet-point-item {
+			color: $white;
+			font-size: 20px;
+			font-weight: 300;
+			line-height: 1.2;
+		}
+	}
+
+	.orange-separator {
+		width: 50px;
+		height: 5px;
+		background-color: $color-orange;
+		margin: 10px 0 10px 10px;
+		border-radius: 5px;;
+	}
+}

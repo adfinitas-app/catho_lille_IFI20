@@ -1,0 +1,42 @@
+//Colors
+$color-red: #bf1b2c;
+$color-blue: #2c3792;
+$color-grey: #7b7979;
+$color-dark-grey: #2b2b2b;
+$color-orange: #f68712;
+$gradient-blue: linear-gradient(90deg, rgba(44, 55, 146, 1) 0%, rgba(0, 98, 213, 1) 100%);
+
+//Font
+$defaultFont: "Lato", sans-serif;
+
+//Navbar
+$navBarHeight: 62px;
+$transitionTime: 0.4s;
+
+body {
+	font-family: $defaultFont;
+	color: $color-grey;
+	overflow-x: hidden;
+}
+
+p {
+	margin-bottom: 0;
+}
+
+.br {
+	font-size: 0px;
+}
+
+section,
+footer {
+	padding: 20px;
+	position: relative;
+}
+
+.bg-gradient-blue {
+	background-color: $color-blue;
+	background-image: $gradient-blue;
+}
+
+@include media-breakpoint-down(sm) {
+}

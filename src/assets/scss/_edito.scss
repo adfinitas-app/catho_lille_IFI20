@@ -1,0 +1,79 @@
+.edito {
+    padding: 0;
+
+    .container {
+        padding: 70px 0;
+    }
+
+    .quote {
+        position: absolute;
+        z-index: -1;
+
+        &.left {
+            left: 5px;
+            top: -17px;
+        }
+
+        &.right {
+            right: 5px;
+            bottom: 3px;
+        }
+    }
+
+    .president-container {
+        .title {
+            text-align: right;
+            font-size: 12px;
+            font-weight: 300;
+            color: $color-dark-grey;
+            margin-right: 10px;
+
+            b {
+                color: $color-blue;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .appel {
+        font-size: 25px;
+        color: $color-dark-grey;
+        margin: 15px 20px;
+    }
+
+    #paragraph-to-expand {
+        font-size: 18px;
+        color: $color-grey;
+        margin: 30px 20px;
+        
+        b {
+            font-weight: 900;
+        }
+
+        .big {
+            color: $color-blue;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    }
+
+    .plus-container {
+        background-color: $color-blue;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        width: 100%;
+        cursor: pointer;
+        outline: none;
+
+        img {
+            color: white;
+
+            &.hidden {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.header {    
+    .image-square-wrapper {
+        position: relative;
+        width: 100%;
+        min-height: 50vh;
+        padding: 10px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        align-items: flex-end;
+
+        .text-container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            align-items: center;
+
+            .picto {
+                //height: 24px;
+                //width: 22px;
+                margin-right: 5px;
+            }
+
+            .text {
+                color: $white;
+                font-weight: bold;
+                font-size: 12px;
+            }
+        }
+
+        transition: transform $transitionTime;
+        &:hover {
+            // text-decoration: none;
+            color: $white;
+            transform: scale(1.1);
+            z-index: 2;
+        }
+    }
+}

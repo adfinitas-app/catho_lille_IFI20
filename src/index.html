@@ -4,13 +4,14 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>DEV</title>
-		<link rel="stylesheet" href="assets/css/styles.min.css" />
+		<link rel="stylesheet" href="@@webRoot/assets/css/styles.min.css" />
 	</head>
 	<body>
+		@@include('partials/nav.html')
         @@include('partials/header.html')
         @@include('partials/edito.html')
         @@include('partials/defisc.html')
-        @@include('partials/declaration.html')
+        @@include('partials/calendar.html')
         @@include('partials/contact.html')
         @@include('partials/pourquoi-nous.html')
 		@@include('partials/footer.html')
@@ -30,6 +31,7 @@
 			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
 			crossorigin="anonymous"
 		></script>
-		<script type="application/javascript" src="assets/js/edito.js"></script>
+		<script type="application/javascript" src="@@webRoot/assets/js/edito.js"></script>
+		<script type="application/javascript" src="@@webRoot/assets/js/switch.js"></script>
 	</body>
 </html>

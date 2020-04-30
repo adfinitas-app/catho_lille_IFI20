@@ -1,0 +1,23 @@
+<nav class="nav desktop">
+    <div class="my-container">
+        <div class="mr-auto logo">
+            <a href="/"><img class="" src="@@webRoot/assets/img/nav-logo.png"/></a>
+        </div>
+        <div class="links">
+            <a href="#" class="link-container zoomOnHover">
+                <img class="picto" src="@@webRoot/assets/img/picto/picto-nav-1.png" />
+                <p class="text">Pourquoi soutenir<br>la Fondation</p>
+            </a>
+            <a href="#" class="link-container zoomOnHover">
+                <img class="picto" src="@@webRoot/assets/img/picto/picto-nav-2.png" />
+                <p class="text">Les dates limites pour profiter<br>de votre avantage fiscal</p>
+            </a>
+            <div class="link-container">
+                @@include('_button-don.html', {
+                    href: '#',
+                    maxWidth: '304px'
+                })
+            </div>
+        </div>
+    </div>
+</nav>

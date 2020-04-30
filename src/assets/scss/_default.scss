@@ -1,10 +1,14 @@
 //Colors
 $color-red: #bf1b2c;
 $color-blue: #2c3792;
-$color-grey: #7b7979;
+$color-grey-20: rgba(123, 121, 121, 0.2);
+$color-grey-60: rgba(123, 121, 121, 0.6);
+$color-grey: rgba(123, 121, 121, 1.0);
 $color-dark-grey: #2b2b2b;
 $color-orange: #f68712;
 $gradient-blue: linear-gradient(90deg, rgba(44, 55, 146, 1) 0%, rgba(0, 98, 213, 1) 100%);
+$gradient-blue-diag: linear-gradient(45deg, rgba(44, 55, 146, 1) 0%, rgba(0, 98, 213, 1) 100%);
+$gradient-red: linear-gradient(45deg, rgba(191, 27, 44, 1) 0%, rgba(237, 20, 41, 1) 100%);
 
 //Font
 $defaultFont: "Lato", sans-serif;
@@ -37,6 +41,12 @@ footer {
 	background-color: $color-blue;
 	background-image: $gradient-blue;
 }
+
+.bg-gradient-red {
+	background-color: $color-red;
+	background-image: $gradient-red;
+}
+
 
 @include media-breakpoint-down(sm) {
 }

@@ -1,0 +1,62 @@
+.pourquoi-nous {
+    padding: 0;
+
+	.blue-separator {
+		width: 50px;
+		height: 5px;
+		background-color: $color-blue;
+		border-radius: 5px;
+		margin: 15px 0;
+    }
+    
+    .background {
+        background-image: url(../../assets/img/pourquoi-background.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        min-height: 542px;
+    }
+
+    .pourquoi {
+        font-size: 33px;
+        color: $color-grey;
+        font-weight: lighter;
+        text-transform: uppercase;
+
+        span {
+            color: $color-orange;
+            font-weight: 600;
+        }
+    }
+
+    .check-list {
+        margin-top: 40px;
+
+        .check-group {
+            display: flex;
+            flex-direction: row;
+            //justify-content: center;
+            align-items: flex-start;
+            max-width: 420px;
+
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+
+            .check-text {
+                margin-left: 15px;
+                font-size: 18px;
+                font-weight: bold;
+                color: $color-blue;
+            }
+        }
+    }
+
+	@include media-breakpoint-down(sm) {
+     
+    }
+    
+    @include media-breakpoint-up(md) {
+        
+	}
+}

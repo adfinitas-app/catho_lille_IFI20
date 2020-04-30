@@ -1,0 +1,85 @@
+.contact {
+    padding: 0;
+
+	.orange-separator {
+		width: 50px;
+		height: 5px;
+		background-color: $color-orange;
+		border-radius: 5px;
+		margin: 15px 0;
+	}
+
+    .vous-etes {
+        color: $color-blue;
+        font-weight: bold;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .deductible {
+        color: $color-grey;
+        font-size: 18px;
+    }
+
+    .pour-toute {
+        color: $white;
+        font-weight: lighter;
+        font-size: 33px;
+        text-transform: uppercase;
+        line-height: 1.1;
+    }
+
+    .complementaire {
+        color: $white;
+        font-size: 18px;
+        margin-bottom: 20px;
+
+        b {
+            font-weight: 900;
+        }
+    }
+
+    .text-picto-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 5px 0;
+
+        .text {
+            color: $white;
+            font-size: 18px;
+            font-weight: 900;
+        }
+
+        .picto {
+            margin-right: 10px;
+        }
+    }
+
+    .container {
+        padding: 0;
+    }
+
+	@include media-breakpoint-down(sm) {
+        .container {
+            max-width: 100%;
+        }
+
+        .background {
+            .bg-gradient-blue {
+                background-image: none;
+                background-color: transparent;
+            }
+        }
+    }
+    
+    @include media-breakpoint-up(md) {
+        .container {
+            .bg-gradient-blue {
+                background-image: none;
+                background-color: transparent;
+            }
+        }
+	}
+}

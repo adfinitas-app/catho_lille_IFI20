@@ -1,0 +1,86 @@
+.nav {
+	min-height: $navBarHeight;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	background-color: white;
+
+	.my-container {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+
+        .logo {
+            padding: 7px;
+        }
+
+		.links {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+
+			.link-container {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: center;
+                height: 100%;
+                color: $color-grey;
+
+				&:not(:last-child) {
+                    padding: 0 20px;
+                    $borderColor: #d4d4d4;
+					border-left: 1px solid $borderColor;
+				}
+
+				img.picto {
+					padding-right: 10px;
+				}
+
+				.text {
+					font-size: 11px;
+					font-weight: 600;
+				}
+			}
+        }
+        .button-don {
+            min-width: 270px;
+        }
+    }
+    
+    @include media-breakpoint-down(sm) {
+        .my-container {
+            .logo {
+                display: none;
+            }
+
+            .links {
+                width: 100%;
+
+                .link-container {
+                    width: 100%;
+                    //justify-content: flex-end;
+
+                    .text {
+                        display: none;
+                    }
+
+                    img.picto {
+                        padding-right: 0;
+                    }
+                }
+            }
+            
+            .button-don {
+                min-width:170px;
+
+                .picto-container {
+                    min-width: 36px;
+                }
+            }
+        }
+    }
+}

@@ -1,8 +1,9 @@
-.header {    
+.header, .squares {    
     .image-square-wrapper {
         position: relative;
         width: 100%;
         min-height: 50vh;
+        height: 100%;
         padding: 10px;
         background-size: cover;
         background-repeat: no-repeat;
@@ -33,7 +34,7 @@
         &:hover {
             // text-decoration: none;
             color: $white;
-            transform: scale(1.1);
+            transform: scale(1.05);
             z-index: 2;
         }
     }

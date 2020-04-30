@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,400i,700,900&display=swap);
+@import '_fonts.scss';
 
 @import 'bootstrap/bootstrap';
 
@@ -11,4 +11,14 @@
 @import '_nav.scss';
 @import '_header.scss';
 @import '_edito.scss';
+@import '_defisc.scss';
+@import '_calendar.scss';
+@import '_contact.scss';
+@import '_pourquoi-nous.scss';
+
+@import 'post/common/_header.scss';
+@import 'post/common/_edito.scss';
+@import 'post/common/_avec.scss';
+
+
 @import '_footer.scss';

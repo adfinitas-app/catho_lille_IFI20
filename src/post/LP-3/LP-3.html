@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>DEV</title>
+		<link rel="stylesheet" href="@@webRoot/assets/css/styles.min.css" />
+	</head>
+	<body>
+		@@include('../../partials/nav.html')
+        @@include('../common/header.html', {
+            title: '<span>Il est URGENT de</span> d’accompagner nos 240 étudiants confinés dans leur chambre universitaire',
+            intro: 'Alors que depuis le début de la crise, 240 étudiants de la Catho de Lille sont confinés dans leur chambre, nous nous mobilisons pour les aider à traverser cette épreuve.',
+            background: '@@webRoot/assets/img/image-square-3-bg.png'
+        })
+        @@include('../common/edito.html', {
+            quote: 'Comment vont réellement nos étudiants restés en résidence car ils n’ont pas pu repartir auprès des leurs ? Ont-ils les moyens de manger correctement ? De maintenir le lien avec leur famille ? De poursuivre correctement leur cursus en ligne ?',
+            author: '<span>Cyril Henon,</span><br />Directeur de “ALL”',
+            amount: '100&nbsp;000&nbsp;€'
+        })
+        @@include('./partials/avec.html')
+        <div class="row no-gutters squares">
+            <div class="col-md-4">
+                @@include('../../partials/_image-square.html', {
+                    href: '/LP-1/LP-1.html',
+                    backgroundImg: '@@webRoot/assets/img/image-square-1-bg.png',
+                    pictoImg: '@@webRoot/assets/img/picto/image-square-red-picto.png',
+                    text: 'Il est URGENT de soutenir notre corps soignant'
+                })
+            </div>
+            <div class="col-md-4">
+                @@include('../../partials/_image-square.html', {
+                    href: '/LP-2/LP-2.html',
+                    backgroundImg: '@@webRoot/assets/img/image-square-2-bg.png',
+                    pictoImg: '@@webRoot/assets/img/picto/image-square-red-picto.png',
+                    text: 'Il est URGENT de protéger nos aînés résidents dans nos EHPAD'
+                })
+            </div>
+            <div class="col-md-4">
+                @@include('../../partials/_image-square.html', {
+                    href: '/LP-4/LP-4.html',
+                    backgroundImg: '@@webRoot/assets/img/image-square-4-bg.png',
+                    pictoImg: '@@webRoot/assets/img/picto/image-square-blue-picto.png',
+                    text: 'Il est ESSENTIEL de faire vivre les projets et initiatives étudiantes'
+                })
+            </div>
+        </div>
+
+        @@include('../../partials/edito.html')
+        @@include('../../partials/defisc.html')
+        @@include('../../partials/calendar.html')
+        @@include('../../partials/contact.html')
+        @@include('../../partials/pourquoi-nous.html')
+		@@include('../../partials/footer.html')
+
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"
+		></script>
+		<script type="application/javascript" src="@@webRoot/assets/js/edito.js"></script>
+		<script type="application/javascript" src="@@webRoot/assets/js/switch.js"></script>
+	</body>
+</html>

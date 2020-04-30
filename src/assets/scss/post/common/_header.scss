@@ -1,0 +1,111 @@
+.post-header {
+	padding-top: $navBarHeight;
+	position: relative;
+
+	&.LP-4 {
+		.bg-gradient-red {
+			background-color: $color-blue;
+			background-image: $gradient-blue-diag;
+		}
+	}
+
+	.bg-absolute {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.btn-back {
+		display: flex;
+		flex-direction: row;
+		color: $white;
+
+		&:hover {
+			text-decoration: none;
+		}
+
+		.square {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 41px;
+			height: 37px;
+			background-color: $color-orange;
+			//todo box shadow
+		}
+
+		.text {
+			color: $white;
+			font-size: 12px;
+			font-weight: 900;
+			margin-left: 10px;
+			text-transform: uppercase;
+		}
+	}
+
+	.background {
+		background-image: url(../../assets/img/image-square-1-bg.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.title {
+		font-size: 33px;
+		color: $white;
+		font-weight: lighter;
+		text-transform: uppercase;
+		margin-top: 30px;
+		line-height: 1.2;
+
+		span {
+			color: $color-orange;
+		}
+	}
+
+	.orange-separator {
+		width: 50px;
+		height: 5px;
+		background-color: $color-orange;
+		margin: 20px 0 20px 0;
+		border-radius: 5px;
+	}
+
+	.groupement {
+		display: inline-block;
+		max-width: 320px;
+		font-size: 18px;
+		color: $white;
+	}
+
+	.col-left,
+	.col-right {
+		min-height: 500px;
+	}
+
+	.container {
+		padding: 0;
+	}
+
+	@include media-breakpoint-down(sm) {
+		.container {
+			max-width: 100%;
+		}
+
+		.bg-absolute {
+            .bg-gradient-red {
+                background-image: none;
+                background-color: transparent;
+            }
+        }
+	}
+
+	@include media-breakpoint-up(md) {
+			.col-left.bg-gradient-red {
+				background-image: none;
+				background-color: transparent;
+			}
+	}
+}

@@ -1,3 +1,45 @@
 <section class="defisc">
-    defisc
+	<div class="container p-0">
+		<div class="row no-gutters">
+			<div class="col-12 col-md-6 col-left">
+				<div class="py-5 px-3 px-lg-5">
+					<p class="faites">
+						Faites de votre fiscalité un accélérateur d'Espérance et<br>
+						<span>réduisez jusqu'à 75% de votre impôt</span>
+					</p>
+					<div class="blue-separator"></div>
+					<p class="reconnue">Reconnue d'utilité publique, la Fondation de la Catho de Lille vous permet de bénéficier d’importantes réductions fiscales.</p>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-right">
+				<div class="py-5 px-3 px-lg-5">
+					<p class="vous-etes">Vous êtes assujettis à :</p>
+					<div class="switch-container">
+						<span class="switch-option active">IFI</span>
+						<label class="switch">
+							<input class="switch-input don-type" type="checkbox" value="IFI" data-value-1="IFI" data-value-2="IR" autocomplete="off"/>
+							<span class="slider"></span>
+						</label>
+						<span class="switch-option">IR</span>
+					</div>
+
+                    <div class="text-center my-3">
+                        <div class="circle-background">
+                            <span class="circle-amount">75%</span>
+                        </div>
+                    </div>
+                    
+					<p class="redevable">Si vous êtes redevable de l’Impôt sur la Fortune Immobilière, vous pouvez déduire 75% de votre don dans la limite de 50&nbsp;000 € par an, soit 66&nbsp;666 € de don.</p>
+					
+					<div class="my-3 d-flex flex-row justify-content-center">
+						@@include('_button-don.html', {
+							href: '#',
+							maxWidth: '300px'
+						})
+					</div>
+					<p class="recu-fiscal">Reçu fiscal disponible immédiatement</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>

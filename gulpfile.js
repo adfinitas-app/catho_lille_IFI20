@@ -61,6 +61,11 @@ function docs(cb) {
 	return src(["src/assets/docs/**/*"]).pipe(dest(`${BUILD_FOLDER}/assets/docs`));
 }
 
+// Copy fonts
+function fonts(cb) {
+	return src(["src/assets/fonts/**/*"]).pipe(dest(`${BUILD_FOLDER}/assets/fonts`));
+}
+
 // Inline CSS
 function inlineCss(cb) {
 	return (
@@ -96,7 +101,7 @@ function inlineJs(cb) {
 
 //fileInclude
 function fileInclude() {
-	return src(["src/index.html"])
+	return src(["src/index.html", "src/post/*/*.html"])
 		.pipe(
 			fileinclude({
 				prefix: "@@",
@@ -121,6 +126,7 @@ function mywatch() {
 	watch("src/assets/js/**/*.js").on("all", series(inlineJs, browser.reload));
 	watch("src/assets/img/**/*").on("all", series(images, browser.reload));
 	watch("src/assets/docs/**/*").on("all", series(docs, browser.reload));
+	watch("src/assets/fonts/**/*").on("all", series(fonts, browser.reload));
 }
 
 exports.clean = clean;
@@ -128,6 +134,7 @@ exports.index = index;
 exports.compileSass = compileSass;
 exports.images = images;
 exports.docs = docs;
+exports.fonts = fonts;
 exports.inlineCss = inlineCss;
 exports.inlineJs = inlineJs;
 exports.fileInclude = fileInclude;
@@ -140,6 +147,7 @@ exports.default = series(
 	inlineCss,
 	inlineJs,
 	images,
+	fonts,
 	docs,
 	server,
 	mywatch

@@ -1,0 +1,88 @@
+.calendar {
+	//padding: 0;
+	$borderColor: #d4d4d4;
+	border-bottom: 1px solid $borderColor;
+
+	.date-limite-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+
+		.date-limite-img {
+			min-width: 84px;
+		}
+
+		.date-limite {
+			font-weight: 600;
+			font-size: 25px;
+			color: $color-blue;
+			text-transform: uppercase;
+			line-height: 1.2;
+			margin: 0 10px;
+
+			span {
+				text-transform: none;
+				font-weight: normal;
+				font-size: 11px;
+				color: $color-grey;
+				float: right;
+				position: relative;
+				left: -45px;
+				line-height: 1.1;
+			}
+		}
+	}
+
+	@include media-breakpoint-down(xs) {
+		.date-limite-container {
+	
+			.date-limite-img {
+				min-width: auto;
+				width: 55px;
+			}
+	
+			.date-limite {
+				font-size: 16px;
+	
+				span {
+					font-size: 8px;
+					left: -30px;
+				}
+			}
+		}
+	}
+
+	.circle {
+		background-color: $color-blue;
+		border-radius: 50%;
+		width: 66px;
+		height: 66px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto;
+
+		.day {
+			font-size: 23px;
+			font-weight: 900;
+			color: $white;
+			line-height: 1.1;
+		}
+
+		.month {
+			font-size: 12px;
+			font-weight: 900;
+			color: $white;
+			text-transform: uppercase;
+		}
+	}
+
+	.circle-text {
+		color: $color-grey;
+		font-weight: bold;
+		text-align: center;
+		font-size: 14px;
+		margin-top: 10px;
+	}
+}

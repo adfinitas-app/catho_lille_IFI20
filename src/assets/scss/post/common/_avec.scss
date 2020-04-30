@@ -1,0 +1,162 @@
+.post-avec {
+	padding: 0;
+	$borderColor: #d4d4d4;
+	border-bottom: 1px solid $borderColor;
+
+	.col-left {
+		border-right: 1px solid $borderColor;
+		position: relative;
+    }
+    
+    .orange-separator {
+		width: 50px;
+		height: 5px;
+		background-color: $color-orange;
+		margin: 20px 0 10px 0px;
+		border-radius: 5px;;
+    }
+    
+    .avec-container {
+
+        .avec {
+            font-size: 33px;
+            color: $color-grey;
+            font-weight: lighter;
+            line-height: 1.3;
+            text-transform: uppercase;
+
+            span {
+                color: $color-red;
+                font-weight: 600;
+            }
+        }
+
+        .avec-list {
+
+            margin-top: 30px;
+            margin-bottom: 40px;
+            padding-left: 15px;
+
+            .avec-list-item {
+                color: $color-orange;
+
+                margin-bottom: 20px;
+
+                .avec-list-item-text {
+                    color: $color-grey;
+                    font-weight: 600;
+                    font-size: 18px;
+                } 
+            }
+        }
+    }
+
+    &.LP-4 .avec-container {
+        .avec {
+            span {
+                color: $color-blue;
+            }
+        }
+    }
+
+    .aussi-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+
+        .aussi {
+            margin-top: 100px;
+            font-size: 20px;
+            font-weight: bold;
+            color: $color-red;
+        }
+
+        .aussi-list {
+
+            margin-top: 10px;
+            margin-bottom: 40px;
+            padding-left: 15px;
+
+            .aussi-list-item {
+                color: $color-orange;
+
+                margin-bottom: 20px;
+
+                .aussi-list-item-text {
+                    color: $color-grey;
+                    font-weight: 600;
+                    font-size: 18px;
+                } 
+            }
+        }
+    }
+
+    &.LP-2 {
+        .background-img {
+            background-image: url(../../assets/img/avec-background-2.png);
+        }
+    }
+    &.LP-3 {
+        .background-img {
+            background-image: url(../../assets/img/avec-background-3.png);
+        }
+    }
+
+    .background-img {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+	@include media-breakpoint-down(sm) {
+		border-bottom: none;
+
+		.col-left {
+			border-right: none;
+			border-bottom: 1px solid $borderColor;
+		}
+
+		.col-right {
+			border-bottom: 1px solid $borderColor;
+        }
+        
+        .aussi-container {
+            .aussi {
+                margin-top: 0px;
+            }
+        }
+
+        .container {
+            max-width: 100%;
+        }
+
+        .background {
+            .background-img {
+                background-image: none;
+                background-color: transparent;
+            }
+        }
+        .col-right {
+            .background-img {
+                display: none;
+            }
+        }
+    }
+    
+    @include media-breakpoint-up(md) {
+        .col-right {
+            .background-img {
+                background-image: none;
+                background-color: transparent;
+            }
+        }
+	}
+}

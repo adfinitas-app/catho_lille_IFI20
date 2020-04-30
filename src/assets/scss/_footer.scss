@@ -1,3 +1,60 @@
 .footer {
+    $borderColor: #d4d4d4;
+    border-top: 1px solid $borderColor;
+    min-height: 106px;
     
+    .my-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .address {
+        font-size: 14px;
+        color: $color-grey;
+        text-align: center;
+    }
+
+    .links {
+        //margin-left: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        a {
+            display: block;
+            line-height: 1.1;
+            font-size: 12px;
+            font-weight: 600;
+            color: $color-blue;
+            text-align: center;
+
+            &:not(:last-child) {
+                margin-right: 15px;
+            }
+
+            &:hover {
+                text-decoration: none;
+                color: $color-blue;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        .links {
+            //margin-left: auto;
+            flex-direction: column;
+    
+            a {
+                &:not(:last-child) {
+                    margin-right: 0px; 
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
 }

@@ -19,13 +19,13 @@
 			position: absolute;
 
 			&.left {
-				top: -15px;
-				left: 0;
+				top: -8px;
+				left: 5px;
 			}
 
 			&.right {
-				right: 15px;
-				bottom: -50px;
+				right: 5px;
+				bottom: -57px;
 			}
 		}
 
@@ -85,6 +85,7 @@
 		font-size: 33px;
 		font-weight: lighter;
 		color: $color-orange;
+		text-transform: uppercase;
 	}
 
 	.amount-besoin {

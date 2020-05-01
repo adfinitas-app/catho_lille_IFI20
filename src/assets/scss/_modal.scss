@@ -1,0 +1,66 @@
+.modal {
+	.modal-dialog {
+		max-width: 960px;
+	}
+
+	.modal-body {
+		.my-container {
+			padding: 40px 120px;
+
+			.big-title {
+				color: $color-blue;
+				font-weight: lighter;
+				font-size: 33px;
+				text-transform: uppercase;
+				line-height: 1.2;
+
+				span {
+					font-weight: 600;
+				}
+			}
+
+			.orange-separator {
+				width: 50px;
+				height: 5px;
+				background-color: $color-orange;
+				margin: 20px 0 0px 0px;
+				border-radius: 5px;
+			}
+
+			.title {
+				font-size: 20px;
+				font-weight: bold;
+				color: $color-blue;
+                text-transform: uppercase;
+                margin-top: 20px;;
+			}
+
+			.paragraph {
+				font-size: 18px;
+				color: $color-grey;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.modal {
+		.modal-body {
+			.my-container {
+				padding: 40px 20px;
+
+				.big-title {
+					font-size: 30px;
+				}
+
+				.title {
+					font-size: 18px;
+				}
+
+				.paragraph {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}

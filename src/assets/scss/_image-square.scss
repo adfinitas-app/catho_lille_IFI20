@@ -4,18 +4,28 @@
         width: 100%;
         min-height: 50vh;
         height: 100%;
-        padding: 10px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        display: flex;
-        align-items: flex-end;
+        display: block;
+        overflow: hidden;
+
+        .background {
+            position: absolute;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+        }
 
         .text-container {
             display: flex;
             flex-direction: row;
             width: 100%;
             align-items: center;
+            position: absolute;
+            z-index: 2;
+            bottom: 8px;
+            left: 10px;
 
             .picto {
                 //height: 24px;
@@ -30,12 +40,8 @@
             }
         }
 
-        transition: transform $transitionTime;
         &:hover {
-            // text-decoration: none;
             color: $white;
-            transform: scale(1.05);
-            z-index: 2;
         }
     }
 }

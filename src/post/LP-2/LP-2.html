@@ -10,7 +10,7 @@
 		@@include('../../partials/nav.html')
         @@include('../common/header.html', {
             title: '<span>Il est URGENT de</span> protéger nos aînés résidents dans nos EHPAD',
-            intro: 'Le Groupement des Hôpitaux de l’Université Catholique de Lille s’est organisé pour armer en lits de réanimation et de soins intensifs nos hôpitaux.Face à l’ampleur de la crise, les EHPAD de la Catho (Saint Antoine et Notre Dame de l’Accueil à Lille et Saint François de Sales à Lomme) ont besoin de matériel pour protéger et améliorer la qualité de vie de nos aînés résidents confinés.',
+            intro: 'Face à l’ampleur de la crise, les EHPAD de la Catho (Saint Antoine et Notre Dame de l’Accueil à Lille et Saint François de Sales à Lomme) ont besoin de matériel pour protéger et améliorer la qualité de vie de nos aînés résidents confinés.',
             background: '@@webRoot/assets/img/image-square-2-bg.png'
         })
         @@include('../common/edito.html', {
@@ -53,22 +53,10 @@
         @@include('../../partials/pourquoi-nous.html')
 		@@include('../../partials/footer.html')
 
-		<script
-			src="https://code.jquery.com/jquery-3.4.1.min.js"
-			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-			crossorigin="anonymous"
-		></script>
-		<script type="application/javascript" src="@@webRoot/assets/js/edito.js"></script>
-		<script type="application/javascript" src="@@webRoot/assets/js/switch.js"></script>
+        @@include('../../partials/modal-legal.html')
+        @@include('../../partials/modal-cookies.html')
+        
+        @@include('../../partials/_scripts.html')
+
 	</body>
 </html>

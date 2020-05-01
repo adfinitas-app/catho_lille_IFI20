@@ -32,7 +32,8 @@
             font-weight: 600;
             color: $color-blue;
             text-align: center;
-
+            text-transform: uppercase;
+            
             &:not(:last-child) {
                 margin-right: 15px;
             }
@@ -48,7 +49,7 @@
         .links {
             //margin-left: auto;
             flex-direction: column;
-    
+            
             a {
                 &:not(:last-child) {
                     margin-right: 0px; 

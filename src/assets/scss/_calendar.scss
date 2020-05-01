@@ -85,4 +85,70 @@
 		font-size: 14px;
 		margin-top: 10px;
 	}
+
+	.line {
+		position: absolute;
+		top: 21px;
+		border-top: 1px solid $color-grey-50;
+		width: 135px;
+		height: 20px;
+
+		&.left {
+			border-left: 1px solid $color-grey-50;
+			left: -97px;
+		}
+		&.right {
+			border-right: 1px solid $color-grey-50;
+			left: 150px;
+		}
+	}
+	@include media-breakpoint-down(lg) {
+		.line {
+			width: 100px;
+			&.left {
+				border-left: 1px solid $color-grey-50;
+				left: -81px;
+			}
+			&.right {
+				border-right: 1px solid $color-grey-50;
+				left: 137px;
+			}
+		}
+	}
+	@include media-breakpoint-down(md) {
+		.line {
+			width: 123px;
+			&.left {
+				border-left: 1px solid $color-grey-50;
+				left: -91px;
+			}
+			&.right {
+				border-right: 1px solid $color-grey-50;
+				left: 146px;
+			}
+		}
+	}
+
+	.par {
+		font-weight: bold;
+		font-size: 14px;
+		color: $color-grey-50;
+		position: absolute;
+		text-transform: uppercase;
+		width: 102px;
+		left: 50%;
+		top: 10px;
+		transform: translateX(-50%);
+	}
+
+	@include media-breakpoint-down(sm) {
+		.par {
+			position: relative;
+			left: unset;
+			top: unset;
+			text-align: center;
+			width: auto;
+			transform: unset;
+		}
+	}
 }

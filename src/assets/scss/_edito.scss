@@ -11,12 +11,13 @@
 
         &.left {
             left: 5px;
-            top: -17px;
+            top: -10px;
         }
 
         &.right {
             right: 5px;
-            bottom: 3px;
+            bottom: 50px;
+            transform: rotate(180deg);
         }
     }
 
@@ -39,6 +40,7 @@
         font-size: 25px;
         color: $color-dark-grey;
         margin: 15px 20px;
+        line-height: 1.3;
     }
 
     #paragraph-to-expand {

@@ -81,5 +81,16 @@
                 background-color: transparent;
             }
         }
+    }
+    
+    @include media-breakpoint-up(xl) {
+        .deductible {
+            margin-right: 9rem !important;
+        }
+    }
+    @include media-breakpoint-down(xs) {
+        .deductible {
+            margin-right: 0rem !important;
+        }
 	}
 }

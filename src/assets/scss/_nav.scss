@@ -76,9 +76,24 @@
             
             .button-don {
                 min-width:170px;
+                padding-left: 36px;
 
                 .picto-container {
                     min-width: 36px;
+                }
+
+                &:hover {
+                    .picto-container {
+                        img {
+                            padding-left: 10px;
+                            transform: translateX(5px);
+                        }
+                    }
+                    .text-container {
+                        .text-don {
+                            transform: translateX(-2px);
+                        }
+                    }
                 }
             }
         }

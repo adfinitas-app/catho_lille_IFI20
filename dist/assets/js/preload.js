@@ -1,0 +1,1 @@
+"use strict";var images=new Array;function preload(e){for(var s=0;s<e.length;s++)images[s]=new Image,images[s].src=e[s]}preload(["../assets/img/circle-66.png","../assets/img/circle-75.png"]);

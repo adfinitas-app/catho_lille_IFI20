@@ -56,12 +56,14 @@
     @include media-breakpoint-down(sm) {
 		.my-container {
 			.logo {
-                //display: none;
-                img {
-                    width: 80px;
-                }
+                padding: 0;
 
-                
+                a {
+                    padding: 0 5px;
+                    img {
+                        width: 80px;
+                    }
+                }
 			}
 
 			.links {

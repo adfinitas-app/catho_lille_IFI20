@@ -1,8 +1,8 @@
 <a class="button-don" href="@@href" target="_blank" style="max-width: @@maxWidth;">
-    <div class="picto-container">
-        <img src="@@webRoot/assets/img/picto/button-arrow.png" alt=""/>
-    </div>
-    <div class="text-container">
-        <span class="text-don">Je fais un don</span>
-    </div>
+	<div class="picto-container">
+		<img src="@@webRoot/assets/img/picto/button-arrow.png" alt="" />
+	</div>
+	<div class="text-container">
+		<span class="text-don">@@if (context.text) { @@text } @@if (!context.text) {@@textDon}</span>
+	</div>
 </a>

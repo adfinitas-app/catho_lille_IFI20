@@ -106,6 +106,9 @@ function fileInclude() {
 			fileinclude({
 				prefix: "@@",
 				basepath: "@file",
+				context: {
+					textDon: 'Je fais un don'
+				}
 			})
 		)
 		.pipe(dest(BUILD_FOLDER));

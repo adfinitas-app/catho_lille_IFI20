@@ -12,11 +12,20 @@
                 <img class="picto" src="@@webRoot/assets/img/picto/picto-nav-2.png" />
                 <p class="text">Les dates limites pour profiter<br>de votre avantage fiscal</p>
             </a>
-            <div class="link-container">
-                @@include('_button-don.html', {
-                    href: 'https://univ-catholille.iraiser.eu/b?cid=10',
-                    maxWidth: '304px'
-                })
+            <div class="link-container btn-don">
+                <div class="d-none d-md-inline-block">
+                    @@include('_button-don.html', {
+                        href: 'https://univ-catholille.iraiser.eu/b?cid=10',
+                        maxWidth: '304px'
+                    })
+                </div>
+                <div class="d-inline-block d-md-none">
+                    @@include('_button-don.html', {
+                        href: 'https://univ-catholille.iraiser.eu/b?cid=10',
+                        maxWidth: '304px',
+                        text: 'Je donne'
+                    })
+                </div>
             </div>
         </div>
     </div>

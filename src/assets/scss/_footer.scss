@@ -58,4 +58,11 @@
             }
         }
     }
+
+    @media screen and (max-width: 980px) {
+
+            .my-container {
+                justify-content: center;
+            }
+    }
 }

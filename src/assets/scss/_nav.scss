@@ -13,7 +13,7 @@
 		flex-direction: row;
 		width: 100%;
         height: 100%;
-        
+
 		.logo {
 			padding: 7px;
 			display: flex;
@@ -60,7 +60,8 @@
 		.my-container {
 			.logo {
                 padding: 0;
-
+                min-width: 90px;
+                
                 a {
                     padding: 0 5px;
                     img {

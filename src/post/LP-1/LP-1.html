@@ -12,6 +12,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>BÂTISSEURS D'ESPÉRANCE | Fondation de la Catho de Lille</title>
 		<link rel="stylesheet" href="@@webRoot/assets/css/styles.min.css" />
+		<link href="https://vjs.zencdn.net/7.8.2/video-js.css" rel="stylesheet" />
+		<!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 	</head>
 	<body>
 		<!-- Google Tag Manager (noscript) -->
@@ -21,13 +24,11 @@
 		@@include('../../partials/nav.html')
         @@include('../common/header.html', {
             title: '<span>Il est URGENT de</span> soutenir notre corps soignant',
-            intro: 'Le Groupement des Hôpitaux de l’Université Catholique de Lille s’est organisé pour armer en lits de réanimation et de soins intensifs nos hôpitaux.',
+            intro: 'Le groupement des Hôpitaux de l’Université Catholique de Lille a fait preuve d’une mobilisation à toute épreuve ! Aujourd’hui, nous avons besoin de moyens pour prendre en charge les nombreux patients dont le suivi, les soins et les interventions ont été suspendus du fait de la crise.',
             background: '@@webRoot/assets/img/image-square-1-bg.png'
         })
-        @@include('../common/edito.html', {
-            quote: 'Nos hôpitaux sont très impliqués dans le dispositif Covid-19. Des lits, des matériels et l’ensemble de nos personnels se déploient pour affronter cette pandémie. Cependant, pour travailler durablement auprès des patients, nous avons besoin de soutien.',
-            author: '<span>Laurent Delaby,</span><br />Directeur Général du Groupement des Hôpitaux de la Catho',
-            amount: '600&nbsp;000&nbsp;€'
+        @@include('../common/video.html', {
+						amount: '600&nbsp;000&nbsp;€'
         })
         @@include('./partials/avec.html')
         <div class="row no-gutters squares">
@@ -69,5 +70,6 @@
 
         @@include('../../partials/_scripts.html')
 
+	<script src="https://vjs.zencdn.net/7.8.2/video.js"></script>
 	</body>
 </html>
